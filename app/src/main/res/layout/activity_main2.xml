@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="0dp"
+    android:padding="15dp"
+    android:layout_gravity="center"
+    tools:context="com.example.stay_fit.MainActivity2">
+
+
+    <TextView
+        android:layout_width="188dp"
+        android:layout_height="42dp"
+        android:text="Personal Information" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="167dp"
+            android:layout_height="48dp"
+            android:text="Height"/>
+
+        <EditText
+            android:id="@+id/Height"
+            android:layout_width="167dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:singleLine="true"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="167dp"
+            android:layout_height="48dp"
+            android:text="Weight"
+            />
+        <EditText
+            android:id="@+id/Weight"
+            android:layout_width="167dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:singleLine="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="167dp"
+            android:layout_height="48dp"
+            android:text="Gender"/>
+
+        <Spinner
+            android:id="@+id/Gender"
+            android:layout_width="167dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="20dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="167dp"
+            android:layout_height="48dp"
+            android:text="Age"
+
+            />
+
+        <EditText
+            android:id="@+id/Age"
+            android:layout_width="167dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:singleLine="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="167dp"
+            android:layout_height="48dp"
+            android:text="Goal"
+            />
+
+        <Spinner
+            android:id="@+id/Goal"
+            android:layout_width="167dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="166dp"
+        android:layout_height="35dp"
+        android:text="Activity Level" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/RGroup">
+    <RadioButton
+        android:id="@+id/SedentaryLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sedentary (little or no exercise)"
+        />
+
+    <RadioButton
+        android:id="@+id/LightlyLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lightly active (Exercise 1-3 times/week)" />
+
+    <RadioButton
+        android:id="@+id/ModeratelyLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Moderately active (Exercise 4-5 times/week)"
+        />
+
+    <RadioButton
+        android:id="@+id/ActiveLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Active (exercise 6-7 times/week)"
+        />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        >
+
+
+    <Button
+        android:id="@+id/SaveData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="25dp"
+        android:text="Save"
+        android:onClick="btnSaveOnClick" />
+
+    <Button
+        android:id="@+id/LoadData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="25dp"
+        android:text="Load"
+        android:onClick="btnLoadOnClick" />
+        <Button
+            android:id="@+id/CalculateCalories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="25dp"
+            android:text="Next"
+            android:onClick="btnCalculateCalories" />
+
+    </LinearLayout>
+
+</LinearLayout>
